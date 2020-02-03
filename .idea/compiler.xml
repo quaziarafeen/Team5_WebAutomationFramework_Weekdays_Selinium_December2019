@@ -11,11 +11,18 @@
         <module name="SimpleTelecom" />
         <module name="Generic" />
         <module name="CommerceInsurance" />
-        <module name="HBO" />
         <module name="AmericanAirlines" />
+        <module name="HBO" />
         <module name="Atena" />
         <module name="HiltonHotel" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Aetna" target="1.8" />
+      <module name="Commerce" target="1.8" />
+      <module name="Hilton" target="1.8" />
+      <module name="Simple" target="1.8" />
+      <module name="Walls Fargo" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

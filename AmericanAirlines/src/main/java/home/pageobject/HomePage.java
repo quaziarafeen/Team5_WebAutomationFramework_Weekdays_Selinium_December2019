@@ -15,6 +15,7 @@ public class HomePage extends WebAPI {
 
 
 
+
     @FindBy(how = How.XPATH, using = WebElementHomePage.webElementSearchButton)
     public static WebElement searchButton;
 
