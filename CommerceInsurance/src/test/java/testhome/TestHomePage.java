@@ -3,10 +3,11 @@ package testhome;
 import common.WebAPI;
 import home.pageobject.AboutPage;
 import home.pageobject.HomePage;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-public class TestHomePage extends WebAPI {
+public class TestHomePage extends HomePage {
      static HomePage homepage;
      static AboutPage aboutpage;
 
@@ -21,28 +22,44 @@ public class TestHomePage extends WebAPI {
 
 
     @Test(priority = 1)
-    public void testDoSearch(){
+    public void testGoForward() throws InterruptedException {
         getInItElements();
-        homepage.doSearch("mobile");
-    }
+        maximize();
+        sleepFor(2);
+        scrollUpDown(4800);
+        sleepFor(2);
+        homepage.getGoForward().click();
+        sleepFor(2);
+        navigateBack();
+        sleepFor(2);
+        scrollUpDown(-4800);
 
-    @Test(priority = 2)
-    public void testDoSearchForTshirt(){
-        getInItElements();
-        homepage.doSearch("t-shirt");
-    }
 
-    @Test(enabled = false)
-    public void testDoSearchForJewelery(){
-        getInItElements();
-        homepage.doSearch("Jewelery");
-    }
 
-    @Test(dataProvider = "Belt")
-    public void testDoSearchForBelt(){
-        getInItElements();
-        homepage.doSearch("Belt");
     }
+//    @Test(priority = 1)
+//    public void testDoSearch(){
+//        getInItElements();
+//        homepage.doSearch("mobile");
+//    }
+//
+//    @Test(priority = 2)
+//    public void testDoSearchForTshirt(){
+//        getInItElements();
+//        homepage.doSearch("t-shirt");
+//    }
+//
+//    @Test(enabled = false)
+//    public void testDoSearchForJewelery(){
+//        getInItElements();
+//        homepage.doSearch("Jewelery");
+//    }
+//
+//    @Test(dataProvider = "Belt")
+//    public void testDoSearchForBelt(){
+//        getInItElements();
+//        homepage.doSearch("Belt");
+//    }
 
 
 }
