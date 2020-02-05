@@ -10,26 +10,28 @@ public class HomePage extends WebAPI {
 
     // All the Home Page Action Methods comes on this class
 
-    @FindBy(how = How.XPATH, using = WebElementHomePage.webElementSearchBox)
-    public static WebElement searchBox;
+//    @FindBy(how = How.XPATH, using = WebElementHomePage.webElementSearchBox)
+//    public static WebElement searchBox;
+//
+//
+//
+//    @FindBy(how = How.XPATH, using = WebElementHomePage.webElementSearchButton)
+//    public static WebElement searchButton;
+    @FindBy(xpath = WebElementHomePage.webElementPicture)
+     static WebElement picture1;
 
 
-
-    @FindBy(how = How.XPATH, using = WebElementHomePage.webElementSearchButton)
-    public static WebElement searchButton;
-
-
-    public static WebElement getSearchBox(){
-        return searchBox;
+    public static WebElement getPicture(){
+        return picture1 ;
     }
 
-    public static WebElement getSearchButton(){
-        return searchButton;
-    }
-
-    public static void doSearch(String value){
-        getSearchBox().sendKeys(value);
-    }
+//    public static WebElement getSearchButton(){
+//        return searchButton;
+//    }
+//
+//    public static void doSearch(String value){
+//        getSearchBox().sendKeys(value);
+//    }
 
 
 

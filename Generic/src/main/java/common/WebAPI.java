@@ -585,7 +585,13 @@ public class WebAPI {
     }
 
 
-
+    public void scrollDown (int intial,int end){
+        JavascriptExecutor Scroll =  (JavascriptExecutor) driver;
+        Scroll.executeScript("window.scrollBy",intial,end);
+    }
+    public void maximize (){
+        driver.manage().window().maximize();
+    }
 
 
 

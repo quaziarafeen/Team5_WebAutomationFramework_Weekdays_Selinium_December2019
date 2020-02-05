@@ -12,7 +12,11 @@ public class TestHomePage extends WebAPI {
 
 
      //PageFactory
-    public void getInItElements(){
+//    public void getInItElements(){
+//        homepage= PageFactory.initElements(driver, HomePage.class);
+//        aboutpage= PageFactory.initElements(driver, AboutPage.class);
+//    }
+    public void getInPicture(){
         homepage= PageFactory.initElements(driver, HomePage.class);
         aboutpage= PageFactory.initElements(driver, AboutPage.class);
 
@@ -21,28 +25,32 @@ public class TestHomePage extends WebAPI {
 
 
     @Test(priority = 1)
-    public void testDoSearch(){
-        getInItElements();
-        homepage.doSearch("mobile");
+    public void testClickPicture() throws InterruptedException {
+        maximize();
+        sleepFor(2);
+        scrollDown(0,4800);
+       sleepFor(5);
+       getInPicture();
+        homepage.getPicture().click();
     }
 
-    @Test(priority = 2)
-    public void testDoSearchForTshirt(){
-        getInItElements();
-        homepage.doSearch("t-shirt");
-    }
-
-    @Test(enabled = false)
-    public void testDoSearchForJewelery(){
-        getInItElements();
-        homepage.doSearch("Jewelery");
-    }
-
-    @Test(dataProvider = "Belt")
-    public void testDoSearchForBelt(){
-        getInItElements();
-        homepage.doSearch("Belt");
-    }
+//    @Test(priority = 2)
+//    public void testDoSearchForTshirt(){
+//        getInItElements();
+//        homepage.doSearch("t-shirt");
+//    }
+//
+//    @Test(enabled = false)
+//    public void testDoSearchForJewelery(){
+//        getInItElements();
+//        homepage.doSearch("Jewelery");
+//    }
+//
+//    @Test(dataProvider = "Belt")
+//    public void testDoSearchForBelt(){
+//        getInItElements();
+//        homepage.doSearch("Belt");
+//    }
 
 
 }
