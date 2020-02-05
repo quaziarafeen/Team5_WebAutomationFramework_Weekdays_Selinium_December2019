@@ -11,8 +11,8 @@
         <module name="SimpleTelecom" />
         <module name="Generic" />
         <module name="CommerceInsurance" />
-        <module name="HBO" />
         <module name="AmericanAirlines" />
+        <module name="HBO" />
         <module name="Atena" />
         <module name="HiltonHotel" />
       </profile>
