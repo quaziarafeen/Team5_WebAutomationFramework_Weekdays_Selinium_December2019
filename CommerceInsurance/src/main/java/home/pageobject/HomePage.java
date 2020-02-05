@@ -17,18 +17,30 @@ public class HomePage extends WebAPI {
 //
 //    @FindBy(how = How.XPATH, using = WebElementHomePage.webElementSearchButton)
 //    public static WebElement searchButton;
-    @FindBy(xpath = WebElementHomePage.webElementPicture)
-     static WebElement picture1;
 
 
-    public static WebElement getPicture(){
-        return picture1 ;
-    }
+
+
 
 //    public static WebElement getSearchButton(){
 //        return searchButton;
 //    }
+    @FindBy(xpath = WebElementHomePage.webElementGoForward)
+    public static WebElement goForward;
+
+
+//    public static WebElement getSearchBox(){
+//        return searchBox;
+//    }
 //
+//    public static WebElement getSearchButton(){
+//        return searchButton;
+//    }
+    public static  WebElement getGoForward(){
+      return  goForward;
+    }
+
+
 //    public static void doSearch(String value){
 //        getSearchBox().sendKeys(value);
 //    }
