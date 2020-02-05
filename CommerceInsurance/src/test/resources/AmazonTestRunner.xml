@@ -12,7 +12,7 @@
     <!--<parameter name="os_version" value="Sierra"/>-->
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="79"/>
-    <parameter name="url" value="https://www.amazon.com"/>
+    <parameter name="url" value="https://www.mapfreinsurance.com"/>
     <test name="Amazon Home">
         <classes>
             <class name="testhome.TestHomePage"/>
