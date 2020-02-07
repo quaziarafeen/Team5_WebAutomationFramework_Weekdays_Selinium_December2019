@@ -20,6 +20,9 @@ public class HomePage extends WebAPI {
 //    public static WebElement searchButton;
     @FindBy(xpath = WebElementHomePage.webElementGoForward)
     public static WebElement goForward;
+    @FindBy(xpath = WebElementHomePage.webElementPicture)
+    public static WebElement getPicture;
+
 
 
 //    public static WebElement getSearchBox(){
@@ -31,6 +34,9 @@ public class HomePage extends WebAPI {
 //    }
     public static  WebElement getGoForward(){
       return  goForward;
+    }
+    public static  WebElement getPicture(){
+      return  getPicture;
     }
 
 
