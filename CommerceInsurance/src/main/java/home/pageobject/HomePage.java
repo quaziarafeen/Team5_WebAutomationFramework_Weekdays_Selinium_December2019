@@ -5,6 +5,7 @@ import home.webelement.WebElementHomePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.testng.annotations.AfterMethod;
 
 public class HomePage extends WebAPI {
 
@@ -31,6 +32,7 @@ public class HomePage extends WebAPI {
     public static  WebElement getGoForward(){
       return  goForward;
     }
+
 
 //    public static void doSearch(String value){
 //        getSearchBox().sendKeys(value);
