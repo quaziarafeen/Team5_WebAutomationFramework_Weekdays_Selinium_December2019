@@ -30,7 +30,7 @@ public class TestHomePage extends HomePage {
 
     }
 
-    @Test(priority = 1)
+    @Test()
     public void testGoForward() throws InterruptedException {
         getInItElements();
         maximize();
@@ -44,7 +44,7 @@ public class TestHomePage extends HomePage {
         scrollUpDown(-4800);
 
     }
-    @Test(priority = 2)
+    @Test()
     public void testGetPicture() throws InterruptedException {
         getInItElements();
         maximize();
