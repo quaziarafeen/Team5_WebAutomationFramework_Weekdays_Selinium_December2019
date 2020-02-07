@@ -5,6 +5,7 @@ import home.webelement.WebElementHomePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.testng.annotations.AfterMethod;
 
 public class HomePage extends WebAPI {
 
@@ -45,7 +46,19 @@ public class HomePage extends WebAPI {
 //        getSearchBox().sendKeys(value);
 //    }
 
+    //public static  void validateLogo(){
+      //  driver.get("https://www.mapfreinsurance.com");
+    @FindBy(xpath = WebElementHomePage.webElementInsuranceLogo)
+   public static  WebElement titleLogo;
 
-
+//public void validateLogo(String logo){
+//  titleLogo.click();
+//
+//}
 
 }
+
+
+
+
+

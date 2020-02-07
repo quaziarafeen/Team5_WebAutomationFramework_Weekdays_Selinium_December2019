@@ -38,7 +38,7 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
-                        <suiteXmlFiles>target/test-classes/AmazonTestRunner.xml</suiteXmlFiles>
+                        <suiteXmlFiles>target/test-classes/WallsFargoTestRunner.xml</suiteXmlFiles>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

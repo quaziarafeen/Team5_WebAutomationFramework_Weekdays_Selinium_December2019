@@ -3,8 +3,14 @@ package testhome;
 import common.WebAPI;
 import home.pageobject.AboutPage;
 import home.pageobject.HomePage;
+import org.apache.commons.collections4.functors.NotNullPredicate;
+import org.junit.runner.notification.Failure;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.IResultMap;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class TestHomePage extends HomePage {
@@ -18,8 +24,7 @@ public class TestHomePage extends HomePage {
         aboutpage= PageFactory.initElements(driver, AboutPage.class);
 
     }
-
-
+/*
     @Test(priority = 1)
 
     public void testGoForward() throws InterruptedException {
@@ -34,9 +39,20 @@ public class TestHomePage extends HomePage {
         sleepFor(2);
         scrollUpDown(-4800);
 
+    }
+
+ */
+   @Test()
+        public void validateLogo() throws InterruptedException{
+       getInItElements();
+        boolean logoDisplayed   = homepage.titleLogo.isDisplayed();
+       Assert.assertEquals(logoDisplayed,true);
+       System.out.println("Text is valid.....");
+        }
 
 
     }
+
 //    @Test(priority = 1)
 //    public void testDoSearch(){
 //        getInItElements();
@@ -62,4 +78,5 @@ public class TestHomePage extends HomePage {
 //    }
 
 
-}
+
+
