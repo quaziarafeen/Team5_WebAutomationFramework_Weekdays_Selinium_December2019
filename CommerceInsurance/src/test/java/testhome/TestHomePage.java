@@ -14,44 +14,54 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class TestHomePage extends HomePage {
-     static HomePage homepage;
-     static AboutPage aboutpage;
+    static HomePage homepage;
+    static AboutPage aboutpage;
 
 
-     //PageFactory
-    public void getInItElements(){
-        homepage= PageFactory.initElements(driver, HomePage.class);
-        aboutpage= PageFactory.initElements(driver, AboutPage.class);
-
-    }
-/*
-    @Test(priority = 1)
-
-    public void testGoForward() throws InterruptedException {
-        getInItElements();
-        maximize();
-        sleepFor(2);
-        scrollUpDown(4800);
-        sleepFor(2);
-        homepage.getGoForward().click();
-        sleepFor(2);
-        navigateBack();
-        sleepFor(2);
-        scrollUpDown(-4800);
+    //PageFactory
+    public void getInItElements() {
+        homepage = PageFactory.initElements(driver, HomePage.class);
+        aboutpage = PageFactory.initElements(driver, AboutPage.class);
 
     }
 
- */
-   @Test()
-        public void validateLogo() throws InterruptedException{
-       getInItElements();
-        boolean logoDisplayed   = homepage.titleLogo.isDisplayed();
-       Assert.assertEquals(logoDisplayed,true);
-       System.out.println("Text is valid. Hurray........");
+    /*
+        @Test(priority = 1)
+
+        public void testGoForward() throws InterruptedException {
+            getInItElements();
+            maximize();
+            sleepFor(2);
+            scrollUpDown(4800);
+            sleepFor(2);
+            homepage.getGoForward().click();
+            sleepFor(2);
+            navigateBack();
+            sleepFor(2);
+            scrollUpDown(-4800);
+
         }
 
 
+    @Test()
+    public void validateLogo() throws InterruptedException {
+        getInItElements();
+        boolean logoDisplayed = homepage.titleLogo.isDisplayed();
+        Assert.assertEquals(logoDisplayed, true);
+        System.out.println("Text is valid. Hurray........");
     }
+    */
+
+
+    @Test()
+    public void InsuranceOptionCheck() throws InterruptedException {
+        getInItElements();
+        boolean isInsuranceOptionClicked = homepage.insuranceOption.isDisplayed();
+        Assert.assertEquals(isInsuranceOptionClicked,true);
+        System.out.println("insurance option worked...........");
+
+    }
+}
 
 //    @Test(priority = 1)
 //    public void testDoSearch(){

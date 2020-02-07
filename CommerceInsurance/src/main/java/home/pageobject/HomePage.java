@@ -51,6 +51,9 @@ public class HomePage extends WebAPI {
     @FindBy(xpath = WebElementHomePage.webElementInsuranceLogo)
    public static  WebElement titleLogo;
 
+    @FindBy(xpath = WebElementHomePage.webElementInsuranceOption )
+    public static WebElement insuranceOption;
+
 //public void validateLogo(String logo){
 //  titleLogo.click();
 //
