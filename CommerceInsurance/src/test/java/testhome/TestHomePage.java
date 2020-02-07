@@ -7,7 +7,6 @@ import org.apache.commons.collections4.functors.NotNullPredicate;
 import org.junit.runner.notification.Failure;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 import org.testng.IResultMap;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -25,7 +24,7 @@ public class TestHomePage extends HomePage {
 
 
     }
-/*
+
     @Test(priority = 1)
     public void testGoForward() throws InterruptedException {
         getInItElements();
@@ -38,18 +37,6 @@ public class TestHomePage extends HomePage {
         navigateBack();
         sleepFor(2);
         scrollUpDown(-4800);
-
-    }
-
- */
-   @Test()
-        public void validateLogo() throws InterruptedException{
-       getInItElements();
-        boolean logoDisplayed   = homepage.titleLogo.isDisplayed();
-       Assert.assertEquals(logoDisplayed,true);
-       System.out.println("Text is valid.....");
-        }
-
 
     }
 
@@ -78,5 +65,4 @@ public class TestHomePage extends HomePage {
 //    }
 
 
-
-
+}
