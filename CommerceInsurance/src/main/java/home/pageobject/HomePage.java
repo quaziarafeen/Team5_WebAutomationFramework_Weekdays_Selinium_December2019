@@ -38,7 +38,19 @@ public class HomePage extends WebAPI {
 //        getSearchBox().sendKeys(value);
 //    }
 
+    //public static  void validateLogo(){
+      //  driver.get("https://www.mapfreinsurance.com");
+    @FindBy(xpath = WebElementHomePage.webElementInsuranceLogo)
+   public static  WebElement titleLogo;
 
-
+//public void validateLogo(String logo){
+//  titleLogo.click();
+//
+//}
 
 }
+
+
+
+
+
