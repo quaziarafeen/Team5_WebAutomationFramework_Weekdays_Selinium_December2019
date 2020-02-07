@@ -28,18 +28,8 @@ public class TestHomePage extends HomePage {
     /*
         @Test(priority = 1)
 
-        public void testGoForward() throws InterruptedException {
-            getInItElements();
-            maximize();
-            sleepFor(2);
-            scrollUpDown(4800);
-            sleepFor(2);
-            homepage.getGoForward().click();
-            sleepFor(2);
-            navigateBack();
-            sleepFor(2);
-            scrollUpDown(-4800);
 
+      
         }
 
 
