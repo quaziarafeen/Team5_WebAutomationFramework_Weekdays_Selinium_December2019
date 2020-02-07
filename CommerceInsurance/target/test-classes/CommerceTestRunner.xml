@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Amazon Automation Script" parallel="false">
+<suite name="Commerence Insurance Automation Script" parallel="false">
 
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
@@ -13,7 +13,7 @@
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="79"/>
     <parameter name="url" value="https://www.mapfreinsurance.com"/>
-    <test name="Amazon Home">
+    <test name="CommerceInsurance Home">
         <classes>
             <class name="testhome.TestHomePage"/>
 

@@ -33,6 +33,30 @@ public class HomePage extends WebAPI {
       return  goForward;
     }
 
+     //able to click on customer access
+    @FindBy(xpath = WebElementHomePage.customeraccess)
+    public static WebElement customeraccess;
+
+    //new tab opens up
+    //shows select your state box with dropdown button.
+    @FindBy(xpath=WebElementHomePage.selectyourstate)
+    public static WebElement selectyourstate;
+
+    //Below select your state shows Login or Register button.
+    @FindBy(xpath = WebElementHomePage.loginorregister)
+    public static WebElement loginorregister;
+
+
+
+
+
+
+    //able to click on agents portal
+    @FindBy(xpath = WebElementHomePage.agentsportal)
+    public static WebElement agentsportal;
+
+
+
 
 //    public static void doSearch(String value){
 //        getSearchBox().sendKeys(value);

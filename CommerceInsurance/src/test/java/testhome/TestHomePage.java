@@ -7,6 +7,7 @@ import org.apache.commons.collections4.functors.NotNullPredicate;
 import org.junit.runner.notification.Failure;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.IResultMap;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -24,21 +25,34 @@ public class TestHomePage extends HomePage {
 
 
     }
+//
+//    @Test(priority = 1)
+//    public void testGoForward() throws InterruptedException {
+//        getInItElements();
+//        maximize();
+//        sleepFor(2);
+//        scrollUpDown(4800);
+//        sleepFor(2);
+//        homepage.getGoForward().click();
+//        sleepFor(2);
+//        navigateBack();
+//        sleepFor(2);
+//        scrollUpDown(-4800);
+//
+//    }
 
-    @Test(priority = 1)
-    public void testGoForward() throws InterruptedException {
+    @Test()
+
+    public void customeraccesscheck() throws InterruptedException {
         getInItElements();
-        maximize();
-        sleepFor(2);
-        scrollUpDown(4800);
-        sleepFor(2);
-        homepage.getGoForward().click();
-        sleepFor(2);
-        navigateBack();
-        sleepFor(2);
-        scrollUpDown(-4800);
+        boolean customeraccessdisplayed=homepage.customeraccess.isDisplayed();
+        Assert.assertEquals(customeraccessdisplayed, true);
+
+
 
     }
+
+
 
 //    @Test(priority = 1)
 //    public void testDoSearch(){
