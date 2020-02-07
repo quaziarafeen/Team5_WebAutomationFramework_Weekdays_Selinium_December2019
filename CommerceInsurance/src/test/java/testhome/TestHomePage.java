@@ -47,7 +47,7 @@ public class TestHomePage extends HomePage {
        getInItElements();
         boolean logoDisplayed   = homepage.titleLogo.isDisplayed();
        Assert.assertEquals(logoDisplayed,true);
-       System.out.println("Text is valid.....");
+       System.out.println("Text is valid. Hurray........");
         }
 
 
