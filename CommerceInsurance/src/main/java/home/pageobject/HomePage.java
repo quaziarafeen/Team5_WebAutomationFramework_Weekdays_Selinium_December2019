@@ -55,22 +55,24 @@ public class HomePage extends WebAPI {
 //  titleLogo.click();
 //
 //}
-//able to click on customer access
-@FindBy(xpath = WebElementHomePage.customeraccess)
-public static WebElement customeraccess;
 
 
 
-        //Below select your state shows Login or Register button.
+       //able to click on customer access
+        @FindBy(xpath = WebElementHomePage.customeraccess)
+        public static WebElement customeraccess;
+
+       //new tab opens up
+       //shows select your state box with dropdown button.
+        @FindBy(xpath=WebElementHomePage.selectyourstate)
+        public static WebElement selectyourstate;
+
+
+       //Below select your state shows Login or Register button.
         @FindBy(xpath = WebElementHomePage.loginorregister)
         public static WebElement loginorregister;
 
 
-
-        //new tab opens up
-        //shows select your state box with dropdown button.
-        @FindBy(xpath=WebElementHomePage.selectyourstate)
-        public static WebElement selectyourstate;
 
         //able to click on agents portal
         @FindBy(xpath = WebElementHomePage.agentsportal)
