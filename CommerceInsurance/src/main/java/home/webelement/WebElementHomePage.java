@@ -10,6 +10,7 @@ public class WebElementHomePage {
     //public static final String webElementSearchButton="//*[@id=\"nav-search\"]/form/div[2]/div/input";
     public static final String webElementGoForward = "//*[@id=\"main\"]/div/div[3]/div/div[2]/article/div/h2/a";
     public static final String webElementInsuranceLogo="//div[@class='logo']//img";
+    public static final String webElementInsuranceOption="//b[contains(text(),'Insurance')]";
 
 
     //able to click customer access.
