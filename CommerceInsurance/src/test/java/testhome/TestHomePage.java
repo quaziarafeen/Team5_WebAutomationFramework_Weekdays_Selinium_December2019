@@ -27,10 +27,11 @@ public class TestHomePage extends HomePage {
         homepage= PageFactory.initElements(driver, HomePage.class);
         aboutpage= PageFactory.initElements(driver, AboutPage.class);
 
-
     }
 
-    @Test()
+
+
+@Test
     public void testGoForward() throws InterruptedException {
         getInItElements();
         maximize();

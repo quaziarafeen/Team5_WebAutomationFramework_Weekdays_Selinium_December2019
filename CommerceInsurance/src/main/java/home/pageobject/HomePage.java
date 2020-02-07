@@ -18,6 +18,14 @@ public class HomePage extends WebAPI {
 //
 //    @FindBy(how = How.XPATH, using = WebElementHomePage.webElementSearchButton)
 //    public static WebElement searchButton;
+
+
+
+
+
+//    public static WebElement getSearchButton(){
+//        return searchButton;
+//    }
     @FindBy(xpath = WebElementHomePage.webElementGoForward)
     public static WebElement goForward;
     @FindBy(xpath = WebElementHomePage.webElementPicture)
@@ -38,6 +46,7 @@ public class HomePage extends WebAPI {
     public static  WebElement getPicture(){
       return  getPicture;
     }
+
 
 
 //    public static void doSearch(String value){
