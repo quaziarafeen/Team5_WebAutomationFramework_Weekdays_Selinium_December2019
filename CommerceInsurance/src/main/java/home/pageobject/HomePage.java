@@ -26,34 +26,45 @@ public class HomePage extends WebAPI {
 //    public static WebElement getSearchButton(){
 //        return searchButton;
 //    }
-    @FindBy(xpath = WebElementHomePage.webElementGoForward)
-    public static WebElement goForward;
-    @FindBy(xpath = WebElementHomePage.webElementPicture)
-    public static WebElement getPicture;
 
+    //public static  void validateLogo(){
+      //  driver.get("https://www.mapfreinsurance.com");
+    @FindBy(xpath = WebElementHomePage.webElementInsuranceLogo)
+   public static  WebElement titleLogo;
 
+    @FindBy(xpath = WebElementHomePage.webElementInsuranceOption )
+    public static WebElement insuranceOption;
 
-//    public static WebElement getSearchBox(){
-//        return searchBox;
-//    }
+//public void validateLogo(String logo){
+//  titleLogo.click();
 //
-//    public static WebElement getSearchButton(){
-//        return searchButton;
-//    }
-    public static  WebElement getGoForward(){
-      return  goForward;
-    }
-    public static  WebElement getPicture(){
-      return  getPicture;
-    }
+//}
 
 
 
-//    public static void doSearch(String value){
-//        getSearchBox().sendKeys(value);
-//    }
+       //able to click on customer access
+        @FindBy(xpath = WebElementHomePage.customeraccess)
+        public static WebElement customeraccess;
+
+       //new tab opens up
+       //shows select your state box with dropdown button.
+        @FindBy(xpath=WebElementHomePage.selectyourstate)
+        public static WebElement selectyourstate;
+
+
+       //Below select your state shows Login or Register button.
+        @FindBy(xpath = WebElementHomePage.loginorregister)
+        public static WebElement loginorregister;
 
 
 
+        //able to click on agents portal
+        @FindBy(xpath = WebElementHomePage.agentsportal)
+        public static WebElement agentsportal;
 
 }
+
+
+
+
+
