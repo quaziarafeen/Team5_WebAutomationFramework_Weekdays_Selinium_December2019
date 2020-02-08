@@ -26,25 +26,6 @@ public class HomePage extends WebAPI {
 //    public static WebElement getSearchButton(){
 //        return searchButton;
 //    }
-    @FindBy(xpath = WebElementHomePage.webElementGoForward)
-    public static WebElement goForward;
-
-
-//    public static WebElement getSearchBox(){
-//        return searchBox;
-//    }
-//
-//    public static WebElement getSearchButton(){
-//        return searchButton;
-//    }
-    public static  WebElement getGoForward(){
-      return  goForward;
-    }
-
-
-//    public static void doSearch(String value){
-//        getSearchBox().sendKeys(value);
-//    }
 
     //public static  void validateLogo(){
       //  driver.get("https://www.mapfreinsurance.com");

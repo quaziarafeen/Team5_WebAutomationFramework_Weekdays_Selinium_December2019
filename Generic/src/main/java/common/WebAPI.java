@@ -12,6 +12,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -593,11 +594,23 @@ public class WebAPI {
     JavascriptExecutor Scroll =  (JavascriptExecutor) driver;
     Scroll.executeScript("window.scrollBy(0,"+scroll+")");
     }
-
+//For Maximize window
     public void maximize(){
     driver.manage().window().maximize();
     }
 
+//    static HomePage homepage;
+//    static AboutPage aboutpage;
+//    static TestGoMapfrePage testGoMapfrePage;
+
+
+//    //PageFactory
+//    public void getInItElements() {
+//       PageFactory.initElements()
+//        //aboutpage = PageFactory.initElements(driver, AboutPage.class);
+//       // testGoMapfrePage = PageFactory.initElements(driver, TestGoMapfrePage.class);
+//
+//    }
 
 
 
