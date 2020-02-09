@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Extent Report DirectoryC:\Users\Quazi\IdeaProjects\All project\Team5_WebAutomationFramework_Weekdays_Selinium_December2019\CommerceInsurance\target\surefire-reports\html]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2020-02-09T16:29:50 EST" name="Surefire suite" finished-at="2020-02-09T16:30:11 EST" duration-ms="21522">
+    <groups>
+    </groups>
+    <test started-at="2020-02-09T16:29:50 EST" name="Surefire test" finished-at="2020-02-09T16:30:11 EST" duration-ms="21522">
+      <class name="testhome.TestGoMapfrePage">
+        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:testhome.TestGoMapfrePage@255b53dc]" started-at="2020-02-09T16:29:49 EST" name="extentSetup" finished-at="2020-02-09T16:29:50 EST" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6a078481]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Extent Report DirectoryC:\Users\Quazi\IdeaProjects\All project\Team5_WebAutomationFramework_Weekdays_Selinium_December2019\CommerceInsurance\target\surefire-reports\html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- extentSetup -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testhome.TestGoMapfrePage@255b53dc]" started-at="2020-02-09T16:29:50 EST" name="setUp" finished-at="2020-02-09T16:29:56 EST" duration-ms="6889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome-options]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[34]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testhome.TestGoMapfrePage@255b53dc]" started-at="2020-02-09T16:29:56 EST" name="startExtent" finished-at="2020-02-09T16:29:56 EST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testhome.TestGoMapfrePage.testGetPicture() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method signature="testGetPicture()[pri:0, instance:testhome.TestGoMapfrePage@255b53dc]" started-at="2020-02-09T16:29:56 EST" name="testGetPicture" finished-at="2020-02-09T16:30:10 EST" duration-ms="13643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPicture -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testhome.TestGoMapfrePage@255b53dc]" started-at="2020-02-09T16:30:10 EST" name="afterEachTestMethod" finished-at="2020-02-09T16:30:11 EST" duration-ms="953" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGetPicture status=SUCCESS method=TestGoMapfrePage.testGetPicture()[pri:0, instance:testhome.TestGoMapfrePage@255b53dc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:testhome.TestGoMapfrePage@255b53dc]" started-at="2020-02-09T16:30:11 EST" name="cleanUp" finished-at="2020-02-09T16:30:11 EST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:testhome.TestGoMapfrePage@255b53dc]" started-at="2020-02-09T16:30:11 EST" name="generateReport" finished-at="2020-02-09T16:30:11 EST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- testhome.TestGoMapfrePage -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

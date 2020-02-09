@@ -29,11 +29,11 @@ public class HomePage extends WebAPI {
 
     //public static  void validateLogo(){
       //  driver.get("https://www.mapfreinsurance.com");
-    @FindBy(xpath = WebElementHomePage.webElementInsuranceLogo)
-   public static  WebElement titleLogo;
-
-    @FindBy(xpath = WebElementHomePage.webElementInsuranceOption )
-    public static WebElement insuranceOption;
+//    @FindBy(xpath = WebElementHomePage.webElementInsuranceLogo)
+//   public static  WebElement titleLogo;
+//
+//    @FindBy(xpath = WebElementHomePage.webElementInsuranceOption )
+//    public static WebElement insuranceOption;
 
 //public void validateLogo(String logo){
 //  titleLogo.click();
@@ -43,24 +43,23 @@ public class HomePage extends WebAPI {
 
 
        //able to click on customer access
-        @FindBy(xpath = WebElementHomePage.customeraccess)
-        public static WebElement customeraccess;
+//        @FindBy(xpath = WebElementHomePage.customeraccess)
+//        public static WebElement customeraccess;
 
        //new tab opens up
        //shows select your state box with dropdown button.
-        @FindBy(xpath=WebElementHomePage.selectyourstate)
-        public static WebElement selectyourstate;
+//        @FindBy(xpath=WebElementHomePage.selectyourstate)
+//        public static WebElement selectyourstate;
 
 
        //Below select your state shows Login or Register button.
-        @FindBy(xpath = WebElementHomePage.loginorregister)
-        public static WebElement loginorregister;
-
+//        @FindBy(xpath = WebElementHomePage.loginorregister)
+//        public static WebElement loginorregister;
 
 
         //able to click on agents portal
-        @FindBy(xpath = WebElementHomePage.agentsportal)
-        public static WebElement agentsportal;
+//        @FindBy(xpath = WebElementHomePage.agentsportal)
+//        public static WebElement agentsportal;
 
 }
 

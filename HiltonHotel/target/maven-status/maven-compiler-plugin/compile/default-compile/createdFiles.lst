@@ -1,0 +1,4 @@
+testNG\UseTestNGAnnotationForMacys.class
+home\webelement\WebElementHomePage.class
+home\pageobject\AboutPage.class
+home\pageobject\HomePage.class

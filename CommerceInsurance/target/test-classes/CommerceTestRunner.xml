@@ -15,7 +15,7 @@
     <parameter name="url" value="https://www.mapfreinsurance.com"/>
     <test name="Commerce Home">
         <classes>
-            <!--<class name="testhome.TestHomePage"/>-->
+            <class name="testhome.TestHomePage"/>
             <class name="testhome.TestGoMapfrePage"/>
 
         </classes>
