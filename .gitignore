@@ -1,10 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
 
-*.idea
-*.iml
-*.xml
-*.html
-/CommerceTestRunner.xml
+/.idea/
+/*.iml
+/*.xml
+/*.html
 /out
 
 ### Java template

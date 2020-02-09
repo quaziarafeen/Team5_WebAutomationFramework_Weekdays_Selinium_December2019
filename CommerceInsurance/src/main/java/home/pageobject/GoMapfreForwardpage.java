@@ -15,7 +15,7 @@ public class GoMapfreForwardpage extends WebAPI {
     public static  WebElement getGoForward(){
         return  goForward;
     }
-    public static  WebElement getPicture(){
-        return  getPicture;
+    public static void   getUrl() { driver.navigate().to("https://www.mapfreinsurance.com"); }
+    public static  WebElement getPicture(){ return  getPicture;
     }
 }

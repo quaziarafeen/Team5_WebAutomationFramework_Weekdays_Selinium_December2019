@@ -13,14 +13,14 @@ public class TestGoMapfrePage extends GoMapfreForwardpage {
 
     @Test()
     public void testGetPicture () throws InterruptedException {
+        getUrl();
         PageFactory.initElements(driver,GoMapfreForwardpage.class);
         maximize();
         sleepFor(2);
         scrollUpDown(2800);
         sleepFor(2);
-        TestGoMapfrePage.getPicture().getScreenshotAs(OutputType.FILE);
+        getPicture().click();
         sleepFor(2);
         scrollUpDown(-2800);
-        afterEachTestMethod(null);
     }
 }
