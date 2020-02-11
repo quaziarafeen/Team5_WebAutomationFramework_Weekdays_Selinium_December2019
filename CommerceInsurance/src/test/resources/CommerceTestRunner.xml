@@ -11,12 +11,12 @@
     <parameter name="os_version" value="10"/>
     <!--<parameter name="os_version" value="10.14.5"/>-->
     <parameter name="browserName" value="chrome"/>
-    <parameter name="browserVersion" value="79"/>
+    <parameter name="browserVersion" value="80"/>
     <parameter name="url" value="https://www.mapfreinsurance.com"/>
     <test name="Commerce Home">
         <classes>
-            <class name="testhome.TestHomePage"/>
-            <class name="testhome.TestGoMapfrePage"/>
+<!--            <class name="testhome.TestHomePage"/>-->
+           <class name="testhome.TestGoMapfrePage"/>
 
         </classes>
 

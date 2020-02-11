@@ -9,13 +9,12 @@ import org.openqa.selenium.support.FindBy;
 public class GoMapfreForwardpage extends WebAPI {
     @FindBy(xpath = WebElementGoMapfrePage.webElementGoForward)
     public static WebElement goForward;
+
+    public static  WebElement getGoForward(){ return  goForward; }
+
     @FindBy(xpath = WebElementGoMapfrePage.webElementPicture)
     public static WebElement getPicture;
 
-    public static  WebElement getGoForward(){
-        return  goForward;
-    }
-    public static void   getUrl() { driver.navigate().to("https://www.mapfreinsurance.com"); }
-    public static  WebElement getPicture(){ return  getPicture;
-    }
+    public static  WebElement getPicture(){ return  getPicture; }
+    public static void   getUrl() { driver.get("https://www.mapfreinsurance.com"); }
 }

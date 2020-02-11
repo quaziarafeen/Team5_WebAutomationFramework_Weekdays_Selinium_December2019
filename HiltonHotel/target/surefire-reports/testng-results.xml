@@ -5,16 +5,16 @@
       <![CDATA[Extent Report DirectoryC:\Users\Quazi\IdeaProjects\All project\Team5_WebAutomationFramework_Weekdays_Selinium_December2019\HiltonHotel\target\surefire-reports\html]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-02-09T16:30:21 EST" name="Surefire suite" finished-at="2020-02-09T16:30:21 EST" duration-ms="0">
+  <suite started-at="2020-02-09T17:06:41 EST" name="Surefire suite" finished-at="2020-02-09T17:06:41 EST" duration-ms="0">
     <groups>
     </groups>
-    <test started-at="2020-02-09T16:30:21 EST" name="Surefire test" finished-at="2020-02-09T16:30:21 EST" duration-ms="0">
+    <test started-at="2020-02-09T17:06:41 EST" name="Surefire test" finished-at="2020-02-09T17:06:41 EST" duration-ms="0">
       <class name="testhome.TestHomePage">
-        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:testhome.TestHomePage@6166e06f]" started-at="2020-02-09T16:30:21 EST" name="extentSetup" finished-at="2020-02-09T16:30:21 EST" duration-ms="218" status="PASS">
+        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:testhome.TestHomePage@6a396c1e]" started-at="2020-02-09T17:06:41 EST" name="extentSetup" finished-at="2020-02-09T17:06:41 EST" duration-ms="250" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@565f390]]>
+                <![CDATA[org.testng.TestRunner@29f7cefd]]>
               </value>
             </param>
           </params>
@@ -24,7 +24,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- extentSetup -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:testhome.TestHomePage@6166e06f]" started-at="2020-02-09T16:30:21 EST" name="generateReport" finished-at="2020-02-09T16:30:21 EST" duration-ms="219" status="PASS">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:testhome.TestHomePage@6a396c1e]" started-at="2020-02-09T17:06:41 EST" name="generateReport" finished-at="2020-02-09T17:06:41 EST" duration-ms="218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->

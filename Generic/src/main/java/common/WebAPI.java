@@ -111,7 +111,8 @@ public class WebAPI {
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false") String cloudEnvName,
                       @Optional("windows") String os, @Optional("10") String os_version, @Optional("chrome-options") String browserName, @Optional("34")
                               String browserVersion, @Optional("https://www.google.com") String url) throws IOException {
-        //System.setProperty("webdriver.chrome.driver", "/Users/peoplentech/eclipse-workspace-March2018/SeleniumProject1/driver/chromedriver");
+        // System.setProperty("webdriver.chrome.driver", "../Generic/BowserDriver/windows/chromedriver.exe");
+
         if (useCloudEnv == true) {
             if (cloudEnvName.equalsIgnoreCase("browserstack")) {
                 getCloudDriver(cloudEnvName, browserstack_username, browserstack_accesskey, os, os_version, browserName, browserVersion);
@@ -366,10 +367,16 @@ public class WebAPI {
         return list;
     }
 
-    public List<WebElement> getListOfWebElementsByXpath(String locator) {
-        List<WebElement> list = new ArrayList<WebElement>();
+    public List<String> getListOfWebElementsByXpath(String locator) {
+        List<WebElement> list = new ArrayList<>();
+        List<String > element =new ArrayList<>();
         list = driver.findElements(By.xpath(locator));
-        return list;
+        for (int i=0; i<list.size(); i++){
+         element.add(list.get(i).getText());
+     }
+        System.out.println("+++++++++++++++++++");
+        System.out.println(element);
+        return element;
     }
 
     public String getCurrentPageUrl() {

@@ -7,8 +7,8 @@
         <methods>
           <include name="afterEachTestMethod"/>
           <include name="setUp"/>
+          <include name="testGoForoward"/>
           <include name="startExtent"/>
-          <include name="testGetPicture"/>
           <include name="generateReport"/>
           <include name="cleanUp"/>
           <include name="extentSetup"/>
