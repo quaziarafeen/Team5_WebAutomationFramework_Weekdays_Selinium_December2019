@@ -3,7 +3,7 @@
 
 <suite name="Commerce Automation Script" parallel="false">
 
-    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="useCloudEnv" value="true"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <!--<parameter name="cloudEnvName" value="saucelab"/>-->
     <parameter name="os" value="windows"/>
@@ -15,8 +15,12 @@
     <parameter name="url" value="https://www.mapfreinsurance.com"/>
     <test name="Commerce Home">
         <classes>
-<!--            <class name="testhome.TestHomePage"/>-->
-           <class name="testhome.TestGoMapfrePage"/>
+            <class name="testhome.TestAboutPage"/>
+            <class name="testhome.TestFooterPage"/>
+            <class name="testhome.TestHomePage"/>
+            <class name="testhome.TestManagePolicyPage"/>
+            <class name="testhome.TestSelectPage"/>
+
 
         </classes>
 

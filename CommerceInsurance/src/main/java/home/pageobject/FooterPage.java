@@ -1,12 +1,12 @@
 package home.pageobject;
 
-import home.webelement.WebElementAbout;
+import home.webelement.WebElementFooter;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class AboutPage extends WebElementAbout {
+public class FooterPage extends WebElementFooter {
     // All the Home Page Action Methods comes on this class
     //Header
     @FindBy(xpath = webElementHeader1) public static String header1;

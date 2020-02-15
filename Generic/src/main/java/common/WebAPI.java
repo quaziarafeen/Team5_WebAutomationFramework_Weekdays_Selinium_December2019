@@ -16,6 +16,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -101,8 +102,8 @@ public class WebAPI {
     //*************************************************************************************************************************
     //Browser SetUp
     public static WebDriver driver = null;
-    public String browserstack_username = "mhshahib1";
-    public String browserstack_accesskey = "YA4xsqrMqFurrGduX1X9";
+    public String browserstack_username = "quaziarafeen1";
+    public String browserstack_accesskey = "dFUTysz8gFEei98qp4zF";
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";
 
@@ -125,7 +126,7 @@ public class WebAPI {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.get(url);
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
     }
 
     public WebDriver getLocalDriver(   @Optional("mac")    String OS, String browserName) {
@@ -313,9 +314,7 @@ public class WebAPI {
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
     }
 
-    public void typeByXpath(String locator, String value) {
-        driver.findElement(By.xpath(locator)).sendKeys(value);
-    }
+    public static void typeByXpath(String locator, String value) {driver.findElement(By.xpath(locator)).sendKeys(value);}
 
     public void takeEnterKeys(String locator) {
         driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
@@ -367,16 +366,16 @@ public class WebAPI {
         return list;
     }
 
-    public List<String> getListOfWebElementsByXpath(String locator) {
+    public static List<WebElement> getListOfWebElementsByXpath(String locator) {
         List<WebElement> list = new ArrayList<>();
         List<String > element =new ArrayList<>();
         list = driver.findElements(By.xpath(locator));
-        for (int i=0; i<list.size(); i++){
+       for (int i=0; i<list.size(); i++){
          element.add(list.get(i).getText());
      }
         System.out.println("+++++++++++++++++++");
         System.out.println(element);
-        return element;
+        return list;
     }
 
     public String getCurrentPageUrl() {
@@ -439,15 +438,16 @@ public class WebAPI {
 
     }
 
-    public void mouseHoverByXpath(String locator) {
+    public static void mouseHoverByXpath(String locator) {
         try {
-            WebElement element = driver.findElement(By.xpath(locator));
             Actions action = new Actions(driver);
+            WebElement element = driver.findElement(By.xpath(locator));
             Actions hover = action.moveToElement(element);
+            hover.perform();
         } catch (Exception ex) {
             System.out.println("First attempt has been done, This is second try");
-            WebElement element = driver.findElement(By.xpath(locator));
             Actions action = new Actions(driver);
+            WebElement element = driver.findElement(By.xpath(locator));
             action.moveToElement(element).perform();
 
         }
@@ -605,6 +605,11 @@ public class WebAPI {
 //For Maximize window
     public void maximize(){
     driver.manage().window().maximize();
+    }
+    //Assert
+    public static void assertCheck(String actual,String expected){
+        Assert.assertEquals(actual,expected);
+        System.out.println("Test Passed");
     }
 
 //    static HomePage homepage;

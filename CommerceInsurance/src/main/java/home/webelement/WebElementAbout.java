@@ -2,17 +2,14 @@ package home.webelement;
 
 import common.WebAPI;
 
-public class WebElementHomePage extends WebAPI {
+public class WebElementAbout extends WebAPI {
 
-
-// All the Web Elements comes in this class from HomePage
-
-//Mapfre Header WebElements
+    //Mapfre Header WebElements
     public static final String webElementHeader1 = "body.js-ready.js-load:nth-child(2) div:nth-child(4) header:nth-child(2) div.model-b > div.layer01:nth-child(1)";
     public static final String webElementHeader2 = "body.js-ready.js-load:nth-child(2) div:nth-child(4) header:nth-child(2) div.model-b > div.layer02:nth-child(2)";
 
     //SearchBox
-   public static final String webElementsearchBox = "//input[@name='q']";
+    public static final String webElementsearchBox = "//input[@name='q']";
     //Assert Validation
     public static final String webElementhelpUsSpread = "#carousel-slideset > a:nth-child(1) > div > div > div.content-block > div > div > div > h2";
     //Click Mphree
@@ -58,14 +55,4 @@ public class WebElementHomePage extends WebAPI {
     //Customer Access
     public static final  String webElementClickCustomer = "//a[@class='button'][contains(text(),'Customer Access')]";
 //    public static final  String webElementClickMphree = "//div[@class='logo']//a[contains(text(),'MAPFRE')]";
-
-
-
-
-
-
-
-
-
-
 }
