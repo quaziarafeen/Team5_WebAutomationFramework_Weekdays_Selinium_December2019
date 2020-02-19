@@ -35,7 +35,7 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
-<!--                        <suiteXmlFiles>target/test-classes/CommerceTestRunner.xml</suiteXmlFiles>-->
+                       <suiteXmlFiles>target/test-classes/CommerceTestRunner.xml</suiteXmlFiles>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

@@ -2,12 +2,15 @@ package home.pageobject;
 
 import home.webelement.WebElementAbout;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class AboutPage extends WebElementAbout {
     // All the Home Page Action Methods comes on this class
+
     //Header
     @FindBy(xpath = webElementHeader1) public static String header1;
 
@@ -23,7 +26,10 @@ public class AboutPage extends WebElementAbout {
 
     public static WebElement getSearch() { return search; }
 
-    public static void setSearch() {getSearch().sendKeys("Autoloan", Keys.ENTER);}
+    /**
+     * This method will help to search
+     */
+    public static void setSearch(String value) {getSearch().sendKeys(value, Keys.ENTER);}
 
     //Get Text
     public static void helpUsSpread() { System.out.println( getTextFromWebElements(webElementhelpUsSpread)); }
@@ -159,10 +165,12 @@ public class AboutPage extends WebElementAbout {
     public static WebElement getSelectWhereWe() { return selectWhereWeAre; }
 
     public static void selectWhereWe() { getSelectWhereWe().click(); }
-    //Click on Customer
-    @FindBy(how = How.XPATH,using = webElementClickCustomer) public static WebElement selectCustomer;
+     //Click on Customer
+   @FindBy(how = How.XPATH,using = webElementClickCustomer) public static WebElement selectCustomer;
 
     public static WebElement getSelectCustomer() { return selectCustomer; }
 
     public static void setSelectCustomer() { getSelectCustomer().click(); }
+
+    @FindBy(how = How.XPATH,using = webElementIfrrame) public static WebElement selectIframe;
 }

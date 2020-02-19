@@ -1,6 +1,11 @@
 home\webelement\WebElementHomePage.class
-home\pageobject\GoMapfreForwardpage.class
-home\pageobject\AboutPage.class
+home\pageobject\ManagePolicyPage.class
+home\webelement\WebElementSelect.class
 testNG\UseTestNGAnnotationForCommerceInsurance.class
+home\pageobject\SelectPage.class
+home\webelement\WebElementManagePolicy.class
+home\webelement\WebElementFooter.class
+home\webelement\WebElementAbout.class
+home\pageobject\AboutPage.class
+home\pageobject\FooterPage.class
 home\pageobject\HomePage.class
-home\webelement\WebElementGoMapfrePage.class

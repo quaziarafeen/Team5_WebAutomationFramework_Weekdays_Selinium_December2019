@@ -55,4 +55,6 @@ public class WebElementAbout extends WebAPI {
     //Customer Access
     public static final  String webElementClickCustomer = "//a[@class='button'][contains(text(),'Customer Access')]";
 //    public static final  String webElementClickMphree = "//div[@class='logo']//a[contains(text(),'MAPFRE')]";
+    //Iframe Handaling
+    public static final String webElementIfrrame = "//*[@id=\"carousel-slideset\"]/div[1]/div/div[1]/img[1]";
 }

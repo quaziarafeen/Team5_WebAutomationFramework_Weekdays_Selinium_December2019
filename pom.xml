@@ -154,10 +154,13 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M4</version>
                 <configuration>
+                    <includes>
+                        <include>testhome.package</include>
+                    </includes>
                     <suiteXmlFiles>
-                        <!--<suiteXmlFiles>target/test-classes/AmazonTestRunner.xml</suiteXmlFiles>-->
-                        <!--<suiteXmlFiles>target/test-classes/CNNTestRunner.xml</suiteXmlFiles>  -->
-                        <!--<suiteXmlFiles>target/test-classes/BBCTestRunner.xml</suiteXmlFiles>  -->
+<!--                        <suiteXmlFiles>target/test-classes/AmazonTestRunner.xml</suiteXmlFiles>-->
+<!--                        <suiteXmlFiles>target/test-classes/CNNTestRunner.xml</suiteXmlFiles>-->
+<!--                        <suiteXmlFiles>target/test-classes/BBCTestRunner.xml</suiteXmlFiles>-->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

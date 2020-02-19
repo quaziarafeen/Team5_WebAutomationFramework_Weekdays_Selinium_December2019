@@ -1,24 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 23.317 s <<< FAILURE! - in TestSuite
-testhome.TestGoMapfrePage.testGoForoward  Time elapsed: 14.357 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using xpath=//*[@id="main"]/div/div[3]/div/div[2]/article/div/h2/a
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-DJBK0729', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: driver.version: RemoteWebDriver
-	at testhome.TestGoMapfrePage.testGoForoward(TestGoMapfrePage.java:37)
-
-testhome.TestGoMapfrePage.afterEachTestMethod  Time elapsed: 14.758 s  <<< FAILURE!
-org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=80.0.3987.87)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-DJBK0729', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Quazi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58461}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ccc6602f99fa3a527cd94c159d6f80fe
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.126 s - in TestSuite

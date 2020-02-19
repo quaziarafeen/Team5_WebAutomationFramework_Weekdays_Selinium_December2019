@@ -624,7 +624,8 @@ public class WebAPI {
 //       // testGoMapfrePage = PageFactory.initElements(driver, TestGoMapfrePage.class);
 //
 //    }
-
+//public static void OpenBrowser (String url) { System.setProperty("webdriver.chrome.driver" , "BrowserDriver/chromedriver.exe");
+    //driver = new ChromeDriver();}
 
 
 }
