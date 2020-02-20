@@ -18,6 +18,7 @@
         <module>SimpleTelecom</module>
         <module>HiltonHotel</module>
         <module>WallsFergo</module>
+        <module>LetsKodeIt</module>
     </modules>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -155,10 +156,10 @@
                 <version>3.0.0-M4</version>
                 <configuration>
                     <includes>
-                        <include>testhome.package</include>
+                      <include>testhome.package</include>
                     </includes>
                     <suiteXmlFiles>
-<!--                        <suiteXmlFiles>target/test-classes/AmazonTestRunner.xml</suiteXmlFiles>-->
+<!--                       <suiteXmlFiles>CommerceTestRunner.xml</suiteXmlFiles>-->
 <!--                        <suiteXmlFiles>target/test-classes/CNNTestRunner.xml</suiteXmlFiles>-->
 <!--                        <suiteXmlFiles>target/test-classes/BBCTestRunner.xml</suiteXmlFiles>-->
                     </suiteXmlFiles>

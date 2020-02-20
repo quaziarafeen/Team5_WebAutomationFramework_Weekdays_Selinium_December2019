@@ -455,12 +455,12 @@ public class WebAPI {
     }
 
     //handling Alert
-    public void okAlert() {
+    public static void okAlert() {
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }
 
-    public void cancelAlert() {
+    public static void cancelAlert() {
         Alert alert = driver.switchTo().alert();
         alert.dismiss();
     }
@@ -598,7 +598,7 @@ public class WebAPI {
 
 
 // For Scroll down or up.
-    public void scrollUpDown(int scroll){
+    public static void scrollUpDown(int scroll){
     JavascriptExecutor Scroll =  (JavascriptExecutor) driver;
     Scroll.executeScript("window.scrollBy(0,"+scroll+")");
     }
@@ -611,7 +611,19 @@ public class WebAPI {
         Assert.assertEquals(actual,expected);
         System.out.println("Test Passed");
     }
-
+//Select From single Menu
+    public static void selectFromDrop(String locator1, String locator2){
+        WebElement element = driver.findElement(By.xpath(locator1));
+        Select drpWrd = new Select(element);
+        drpWrd.selectByValue(locator2);
+    }
+//Select From Multiple Menu
+    public static void selectFromMultipleDrop(String locator1, String locator2,String locator3){
+        WebElement element = driver.findElement(By.xpath(locator1));
+        Select drpWrd = new Select(element);
+        drpWrd.selectByValue(locator2);
+        drpWrd.selectByValue(locator3);
+    }
 //    static HomePage homepage;
 //    static AboutPage aboutpage;
 //    static TestGoMapfrePage testGoMapfrePage;

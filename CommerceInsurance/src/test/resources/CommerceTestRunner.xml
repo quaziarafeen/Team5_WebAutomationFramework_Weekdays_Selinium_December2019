@@ -16,10 +16,10 @@
     <test name="Commerce Home">
         <classes>
             <class name="testhome.TestAboutPage"/>
-<!--            <class name="testhome.TestFooterPage"/>-->
-<!--            <class name="testhome.TestHomePage"/>-->
-<!--            <class name="testhome.TestManagePolicyPage"/>-->
-<!--            <class name="testhome.TestSelectPage"/>-->
+            <class name="testhome.TestFooterPage"/>
+            <class name="testhome.TestHomePage"/>
+            <class name="testhome.TestManagePolicyPage"/>
+            <class name="testhome.TestSelectPage"/>
 
 
         </classes>

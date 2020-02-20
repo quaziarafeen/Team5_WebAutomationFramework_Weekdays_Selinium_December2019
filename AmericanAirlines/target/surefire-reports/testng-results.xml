@@ -5,16 +5,16 @@
       <![CDATA[Extent Report DirectoryC:\Users\Quazi\IdeaProjects\All project\Team5_WebAutomationFramework_Weekdays_Selinium_December2019\AmericanAirlines\target\surefire-reports\html]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-02-19T00:03:10 EST" name="Aetna Automation Script" finished-at="2020-02-19T00:03:10 EST" duration-ms="4">
+  <suite started-at="2020-02-19T01:29:02 EST" name="Aetna Automation Script" finished-at="2020-02-19T01:29:02 EST" duration-ms="0">
     <groups>
     </groups>
-    <test started-at="2020-02-19T00:03:10 EST" name="Americanairlines Home" finished-at="2020-02-19T00:03:10 EST" duration-ms="4">
+    <test started-at="2020-02-19T01:29:02 EST" name="Americanairlines Home" finished-at="2020-02-19T01:29:02 EST" duration-ms="0">
       <class name="testhome.TestHomePage">
-        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:testhome.TestHomePage@7c417213]" started-at="2020-02-19T00:03:10 EST" name="extentSetup" finished-at="2020-02-19T00:03:10 EST" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:testhome.TestHomePage@7c417213]" started-at="2020-02-19T01:29:02 EST" name="extentSetup" finished-at="2020-02-19T01:29:02 EST" duration-ms="147" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7fd7a283]]>
+                <![CDATA[org.testng.TestRunner@7ac296f6]]>
               </value>
             </param>
           </params>
@@ -24,7 +24,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- extentSetup -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:testhome.TestHomePage@7c417213]" started-at="2020-02-19T00:03:10 EST" name="generateReport" finished-at="2020-02-19T00:03:10 EST" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:testhome.TestHomePage@7c417213]" started-at="2020-02-19T01:29:02 EST" name="generateReport" finished-at="2020-02-19T01:29:02 EST" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->

@@ -7,11 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="WallsFergo" />
+        <module name="AmericanAirlines" />
         <module name="Macys" />
         <module name="SimpleTelecom" />
         <module name="Generic" />
         <module name="CommerceInsurance" />
-        <module name="AmericanAirlines" />
+        <module name="LetsKodeIt" />
         <module name="HBO" />
         <module name="Atena" />
         <module name="HiltonHotel" />
